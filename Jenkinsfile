@@ -4,7 +4,7 @@ node {
     stage ('Test')
     {
     try {
-        sh 'exit 1'
+        sh 'exit 0'
         currentBuild.result = 'SUCCESS'
     } catch (any) {
         currentBuild.result = 'FAILURE'
